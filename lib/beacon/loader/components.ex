@@ -85,8 +85,8 @@ defmodule Beacon.Loader.Components do
           Beacon.apply_mfa(unquote(site), __MODULE__, :render, [name, Enum.into(assigns, %{})])
         end
 
-        unquote_splicing(render_functions)
         unquote_splicing(function_components)
+        unquote_splicing(render_functions)
       end
     end
   end
